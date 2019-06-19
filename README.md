@@ -1,2 +1,2 @@
-# canplan_html
-[Home](CanPlan_Html/index.html)
+# Canplan HTML preview
+Click [HERE](CanPlan_Html/index.html) to preview site
