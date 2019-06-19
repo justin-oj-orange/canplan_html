@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanPlan_Html", "CanPlan_Html\CanPlan_Html.csproj", "{AD559B0D-5B2A-43C4-921D-B9BE06D764E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD559B0D-5B2A-43C4-921D-B9BE06D764E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD559B0D-5B2A-43C4-921D-B9BE06D764E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD559B0D-5B2A-43C4-921D-B9BE06D764E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD559B0D-5B2A-43C4-921D-B9BE06D764E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23CBBC04-F3F6-447F-866A-75CCF197CA93}
+	EndGlobalSection
+EndGlobal

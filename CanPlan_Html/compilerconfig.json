@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "canplan_styles.css",
+    "inputFile": "canplan_styles.scss"
+  },
+  {
+    "outputFile": "css/canplan_styles.css",
+    "inputFile": "css/canplan_styles.scss"
+  }
+]

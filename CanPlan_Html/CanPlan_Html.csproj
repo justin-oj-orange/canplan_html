@@ -1,0 +1,281 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD559B0D-5B2A-43C4-921D-B9BE06D764E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CanPlan_Html</RootNamespace>
+    <AssemblyName>CanPlan_Html</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="changemyaddress.html" />
+    <Content Include="checkout.html" />
+    <Content Include="collectioninformation.html" />
+    <Content Include="commercial.html" />
+    <Content Include="contactus.html" />
+    <Content Include="css\canplan_styles.css">
+      <DependentUpon>canplan_styles.scss</DependentUpon>
+    </Content>
+    <Content Include="css\canplan_styles.min.css">
+      <DependentUpon>canplan_styles.css</DependentUpon>
+    </Content>
+    <Content Include="changebinsize.html" />
+    <Content Include="FAQ.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon\android-icon-144x144.png" />
+    <Content Include="favicon\android-icon-192x192.png" />
+    <Content Include="favicon\android-icon-36x36.png" />
+    <Content Include="favicon\android-icon-48x48.png" />
+    <Content Include="favicon\android-icon-72x72.png" />
+    <Content Include="favicon\android-icon-96x96.png" />
+    <Content Include="favicon\apple-icon-114x114.png" />
+    <Content Include="favicon\apple-icon-120x120.png" />
+    <Content Include="favicon\apple-icon-144x144.png" />
+    <Content Include="favicon\apple-icon-152x152.png" />
+    <Content Include="favicon\apple-icon-180x180.png" />
+    <Content Include="favicon\apple-icon-57x57.png" />
+    <Content Include="favicon\apple-icon-60x60.png" />
+    <Content Include="favicon\apple-icon-72x72.png" />
+    <Content Include="favicon\apple-icon-76x76.png" />
+    <Content Include="favicon\apple-icon-precomposed.png" />
+    <Content Include="favicon\apple-icon.png" />
+    <Content Include="favicon\browserconfig.xml" />
+    <Content Include="favicon\favicon-16x16.png" />
+    <Content Include="favicon\favicon-32x32.png" />
+    <Content Include="favicon\favicon-96x96.png" />
+    <Content Include="favicon\favicon.ico" />
+    <Content Include="favicon\ms-icon-144x144.png" />
+    <Content Include="favicon\ms-icon-150x150.png" />
+    <Content Include="favicon\ms-icon-310x310.png" />
+    <Content Include="favicon\ms-icon-70x70.png" />
+    <Content Include="img\1100LTR-Blue.png" />
+    <Content Include="img\1100LTR-Green.png" />
+    <Content Include="img\1100LTR-Red.png" />
+    <Content Include="img\1100LTR-yellow.png" />
+    <Content Include="img\120ltr-blue.png" />
+    <Content Include="img\120ltr-Green.png" />
+    <Content Include="img\120ltr-red.png" />
+    <Content Include="img\120ltr-yellow.png" />
+    <Content Include="img\120_240ltr-blue.png" />
+    <Content Include="img\120_240ltr-Green.png" />
+    <Content Include="img\120_240ltr-red.png" />
+    <Content Include="img\120_240ltr-Twin.png" />
+    <Content Include="img\240ltr-blue.png" />
+    <Content Include="img\240ltr-Green.png" />
+    <Content Include="img\240ltr-red.png" />
+    <Content Include="img\240ltr-yellow.png" />
+    <Content Include="img\2cubeSkip.png" />
+    <Content Include="img\4cubeSkip.png" />
+    <Content Include="img\7cubeSkip.png" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\bannerInvasion.jpg" />
+    <Content Include="img\Cage.png" />
+    <Content Include="img\ourstory\1996.jpg" />
+    <Content Include="img\ourstory\1996b.jpg" />
+    <Content Include="img\ourstory\2000.jpg" />
+    <Content Include="img\ourstory\2000b.jpg" />
+    <Content Include="img\ourstory\2002.jpg" />
+    <Content Include="img\ourstory\2003.jpg" />
+    <Content Include="img\ourstory\2003b.jpg" />
+    <Content Include="img\ourstory\2004.jpg" />
+    <Content Include="img\ourstory\2006.jpg" />
+    <Content Include="img\ourstory\2006b.jpg" />
+    <Content Include="img\ourstory\2007.jpg" />
+    <Content Include="img\ourstory\2009.jpg" />
+    <Content Include="img\ourstory\2009b.jpg" />
+    <Content Include="img\ourstory\2010.jpg" />
+    <Content Include="img\ourstory\2010b.jpg" />
+    <Content Include="img\ourstory\2010c.jpg" />
+    <Content Include="img\ourstory\2011.jpg" />
+    <Content Include="img\ourstory\2013-greenService.jpg" />
+    <Content Include="img\ourstory\BA-2016-Investing-in-People-and-Skills-winner-Can-Plan-resized-002.jpg" />
+    <Content Include="img\ourstory\canplan-newsletter-2014-1.jpg" />
+    <Content Include="img\ourstory\canplan-newsletter-2014-2.jpg" />
+    <Content Include="img\ourstory\co-flyer.jpg" />
+    <Content Include="img\ourstory\first-newsletter.jpg" />
+    <Content Include="img\ourstory\first-trucks.jpg" />
+    <Content Include="img\ourstory\JungleP1.jpg" />
+    <Content Include="img\ourstory\JungleP2.jpg" />
+    <Content Include="img\ourstory\nelsons-first-newsletter.jpg" />
+    <Content Include="img\ourstory\nelsons-first.jpg" />
+    <Content Include="img\ourstory\pink-flyer.jpg" />
+    <Content Include="img\ourstory\red-flyer-1.jpg" />
+    <Content Include="img\ourstory\red-flyer-2.jpg" />
+    <Content Include="img\ourstory\thumbnails\1996bmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\1996mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2000bmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2000mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2002mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2003bmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2003mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2004mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2006bmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2006mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2007mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2009bmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2009mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2010bmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2010cmini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2010mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2011mini.jpg" />
+    <Content Include="img\ourstory\thumbnails\2013-greenService.jpg" />
+    <Content Include="img\ourstory\thumbnails\canplan-newsletter-2014-1_t %281%29.jpg" />
+    <Content Include="img\ourstory\thumbnails\canplan-newsletter-2014-1_t.jpg" />
+    <Content Include="img\ourstory\thumbnails\canplan-newsletter-2014-2_t.jpg" />
+    <Content Include="img\ourstory\thumbnails\chamber-logo.jpg" />
+    <Content Include="img\ourstory\thumbnails\co-flyer.jpg" />
+    <Content Include="img\ourstory\thumbnails\first-newsletter.jpg" />
+    <Content Include="img\ourstory\thumbnails\first-trucks.jpg" />
+    <Content Include="img\ourstory\thumbnails\nelsons-first-newsletter.jpg" />
+    <Content Include="img\ourstory\thumbnails\nelsons-first.jpg" />
+    <Content Include="img\ourstory\thumbnails\pink.jpg" />
+    <Content Include="img\ourstory\thumbnails\red-flyer-1.jpg" />
+    <Content Include="img\ourstory\thumbnails\red-flyer-2.jpg" />
+    <Content Include="img\ourstory\thumbnails\toptip-rural-flyer-1_t.jpg" />
+    <Content Include="img\ourstory\toptip-rural-flyer-1.jpg" />
+    <Content Include="img\staff\can-plan-staff-17.jpg" />
+    <Content Include="img\CANPLANLogo.png" />
+    <Content Include="css\swipebox.min.css" />
+    <Content Include="img\icons.png" />
+    <Content Include="img\icons.svg" />
+    <Content Include="img\loader.gif" />
+    <Content Include="img\Mikes_Guarantee_188.png" />
+    <Content Include="img\staff\charmaine-17.jpg" />
+    <Content Include="img\staff\danielle-17.jpg" />
+    <Content Include="img\staff\josh-17.jpg" />
+    <Content Include="img\staff\michael-17.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\cp.js" />
+    <Content Include="js\jquery.swipebox.min.js" />
+    <Content Include="media.html" />
+    <Content Include="ourstory.html" />
+    <Content Include="paymyaccount.html" />
+    <Content Include="residential.html" />
+    <Content Include="skips.html" />
+    <Content Include="skips2.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\canplan_styles.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="favicon\manifest.json" />
+    <None Include="packages.config" />
+    <Content Include="pdf\binhitch.pdf" />
+    <Content Include="pdf\Colouring-Competition.pdf" />
+    <Content Include="pdf\directDebitForm.pdf" />
+    <Content Include="pdf\muck.pdf" />
+    <Content Include="pdf\recycle-guide.pdf" />
+    <Content Include="pdf\submission.pdf" />
+    <Content Include="pdf\submission2.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50108</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50108/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
