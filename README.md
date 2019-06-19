@@ -1,2 +1,2 @@
 # canplan_html
-[Home](CanPlan_html/index.html)
+[Home](CanPlan_Html/index.html)
