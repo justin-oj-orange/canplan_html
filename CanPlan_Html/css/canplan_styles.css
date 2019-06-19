@@ -128,15 +128,15 @@ header {
     border-radius: 1rem;
     font-size: .9rem; }
   header .navbar-light .navbar-nav {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    justify-content: flex-end; }
     header .navbar-light .navbar-nav .dropdown .dropdown-menu a.dropdown-item {
       color: black;
-      font-weight: 100;
-      font-size: 1.2rem; }
+      font-weight: 100; }
     header .navbar-light .navbar-nav .nav-link {
       cursor: pointer;
       color: black;
-      min-width: 12rem; }
+      margin-right: 2rem; }
   header .navbar {
     align-items: flex-end; }
     header .navbar .nav-item {

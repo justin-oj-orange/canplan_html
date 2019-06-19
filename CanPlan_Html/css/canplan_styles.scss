@@ -130,19 +130,19 @@ header {
     }
 
     .navbar-light .navbar-nav {
-        margin-top:1rem;
+        margin-top: 1rem;
+        justify-content: flex-end;
+
         .dropdown .dropdown-menu a.dropdown-item {
             color: $cp-primary-black;
             font-weight: 100;
-            font-size: 1.2rem;
         }
 
-        .nav-link {            
+        .nav-link {
             cursor: pointer;
             color: $cp-primary-black;
-            min-width: 12rem;          
+            margin-right: 2rem;
         }
-        
     }
 
     .navbar {
