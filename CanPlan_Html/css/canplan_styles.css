@@ -256,19 +256,26 @@ footer {
   .cp-table th, .cp-table td {
     padding-left: 0;
     padding-right: 0;
-    border: 0; }
+    border: 0;
+    vertical-align: middle; }
   .cp-table thead th, .cp-table tbody td, .cp-table tbody th, .cp-table .border-bottom td {
     border-bottom: 1px solid black; }
   .cp-table th {
     font-weight: 700; }
     .cp-table th img {
-      display: none; }
+      display: none;
+      width: 50%;
+      margin: 0 auto; }
+  .cp-table td img {
+    height: 4rem;
+    display: none;
+    margin-right: 2rem; }
 
 @media (min-width: 576px) {
   .cp-table th img {
-    display: block;
-    width: 50%;
-    margin: 0 auto; } }
+    display: block; }
+  .cp-table td img {
+    display: inline; } }
 
 .cp-cart-remove {
   border: none;
