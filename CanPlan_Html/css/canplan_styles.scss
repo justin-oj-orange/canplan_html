@@ -78,7 +78,7 @@ $cp-secondary-grey: rgb(203,203,203);
 }
 
 //Element changes
-* {
+*:not(.no-animate) {
     -moz-transition: all .4s;
     -o-transition: all .4s;
     -webkit-transition: all .4s;
@@ -156,8 +156,18 @@ a.btn-cp {
 }
 
 //Master Page
+body{
+    padding-top: 8rem; //this is to compenstate for the fixed header below
+}
 header {
-    margin: .5rem 0;
+    position:fixed;
+    background-color: rgba($cp-primary-white,.9);
+    top:0;
+    left:0;
+    right:0;
+    z-index:1030;
+   margin: 0;
+   padding: .5rem;
     font-size: 1.2rem;
     color: $cp-primary-black;
 
@@ -221,7 +231,10 @@ header {
 }
 
 main {
-    margin: 2rem 0;
+    padding: 1rem 0; 
+    position:relative;
+    z-index:2;
+    background-color: $cp-primary-white;
 }
 
 footer {
@@ -471,9 +484,10 @@ footer {
     height: 100%;
 }
 
-.carousel-item {
+.carousel-item {        
+    background-position:center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
     width: 100%;
     height: 100%;
 }
@@ -536,4 +550,3 @@ a.swipebox {
     text-decoration: none;
 }
 //End Our Story Page
-
