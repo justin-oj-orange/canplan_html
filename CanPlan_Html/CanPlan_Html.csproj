@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="binsupplies.html" />
     <Content Include="changemyaddress.html" />
     <Content Include="checkout.html" />
+    <Content Include="checkoutcomplete.html" />
     <Content Include="collectioninformation.html" />
     <Content Include="commercial.html" />
     <Content Include="contactus.html" />
