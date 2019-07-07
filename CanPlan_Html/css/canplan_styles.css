@@ -108,16 +108,8 @@ a.btn-cp {
 .form-control {
   border-color: black; }
 
-body {
-  padding-top: 8rem; }
-
 header {
-  position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
   margin: 0;
   padding: .5rem;
   font-size: 1.2rem;
@@ -155,6 +147,8 @@ header {
     header .navbar-brand img {
       width: 70px;
       vertical-align: sub; }
+  header.scrolling .navbar-brand img {
+    width: 40px; }
   header .navbar-collapse {
     -webkit-align-items: flex-start;
     align-items: flex-start; }
@@ -219,17 +213,25 @@ footer {
     width: 120px; } }
 
 @media (min-width: 992px) {
-  header .shopping-cart-count {
-    position: static;
-    top: inherit;
-    right: inherit;
-    background-color: inherit;
-    color: inherit;
-    padding: .2rem;
-    border-radius: inherit;
-    font-size: inherit; }
-  header .navbar-light .navbar-nav {
-    justify-content: flex-end; } }
+  body {
+    padding-top: 8rem; }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; }
+    header .shopping-cart-count {
+      position: static;
+      top: inherit;
+      right: inherit;
+      background-color: inherit;
+      color: inherit;
+      padding: .2rem;
+      border-radius: inherit;
+      font-size: inherit; }
+    header .navbar-light .navbar-nav {
+      justify-content: flex-end; } }
 
 .w-70 {
   width: 70% !important; }
@@ -264,7 +266,7 @@ footer {
     font-weight: 700; }
     .cp-table th img {
       display: none;
-      width: 50%;
+      height: 9rem;
       margin: 0 auto; }
   .cp-table td img {
     height: 4rem;
@@ -324,6 +326,8 @@ footer {
     margin: 1rem auto; }
   .card img {
     height: 10rem; }
+  .card .img-sml img {
+    height: 6rem; }
 
 .carousel {
   width: 100%;

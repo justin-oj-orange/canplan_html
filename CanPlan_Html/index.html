@@ -42,7 +42,7 @@
     </script>-->
 </head>
 <body>
-    <header class="fixed-top">
+    <header>
         <nav class="container navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -151,13 +151,13 @@
                             <h1 class="h3">Get your BIN Supplies</h1>
                         </div>
                         <div class="card-body">
-                            <div>
-                                <img src="img/120lbinliners.png" alt="BIN Supplies - 120L Bin Liners" />
-                                <img src="img/240lbinliners.png" alt="BIN Supplies - 240L Bin Liners" />
-                                <img src="img/120lbintags.png" alt="BIN Supplies - 120L Bin Tags" />
-                                <img src="img/240lbintags.png" alt="BIN Supplies - 240L Bin Tags" />
+                            <div class="d-flex justify-content-around text-cp-primary-green-1 img-sml">
+                                <a href="checkout.html"><img src="img/120Liner.png" alt="BIN Supplies - 120L Bin Liners" /><br/>120L Bin<br/>Liners</a>
+                                <a href="checkout.html"><img src="img/240Liner.png" alt="BIN Supplies - 240L Bin Liners" /><br/>240L Bin<br />Liners</a>
+                                <a href="checkout.html"><img src="img/BlueTags_New_1.png" alt="BIN Supplies - 120L Bin Tags" /><br/>120L Bin<br />Tags</a>
+                                <a href="checkout.html"><img src="img/RedTags_new_1.png" alt="BIN Supplies - 240L Bin Tags" /><br/>240L Bin<br />Tags</a>
                             </div>
-                            <a href="binsupplies.html" class="btn btn-cp stretched-link" title="Order BIN Supplies">ORDER Supplies</a>
+                            <a href="binsupplies.html" class="btn btn-cp" title="Order BIN Supplies">ORDER Supplies</a>
                         </div>
                     </div>
                 </section>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="card-body">
                             <div>
-                                <img src="img/Cage.png" alt="Business Bins Recycling Cage" />
+                                <img src="img/RedBIN_3m3_R.png" alt="Business Bins Red 3m Bin" />
                                 <img src="img/Cage.png" alt="Business Bins Recycling Cage" />
                             </div>
                             <a href="commercial.html" class="btn btn-cp stretched-link" title="Order Business BIN">ORDER BIN</a>
@@ -227,10 +227,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-        window.onscroll = function() {
+        window.addEventListener('scroll', function () {
             var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-            document.getElementById("cp-carousel").style.transform = "translateY(" + (scrollTop / 2) + "px)";
-        };
+            document.getElementById("cp-carousel").style.transform = "translateY(" + (scrollTop / 2) + "px)";            
+        });           
     </script>
 
 </body>

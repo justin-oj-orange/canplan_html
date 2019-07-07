@@ -156,17 +156,9 @@ a.btn-cp {
 }
 
 //Master Page
-body {
-    padding-top: 8rem; //this is to compenstate for the fixed header below
-}
 
-header {
-    position: fixed;
-    background-color: rgba($cp-primary-white,.9);
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
+header {    
+    background-color: rgba($cp-primary-white,.9);    
     margin: 0;
     padding: .5rem;
     font-size: 1.2rem;
@@ -222,6 +214,12 @@ header {
         img {
             width: 70px;
             vertical-align: sub;
+           
+        }
+    }
+    &.scrolling{
+        .navbar-brand img{
+            width:40px;
         }
     }
 
@@ -326,8 +324,17 @@ footer {
 }
 
 @media (min-width: 992px) {
+    body {
+        padding-top: 8rem; //this is to compenstate for the fixed header below
+    }
 
     header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+
         .shopping-cart-count {
             position: static;
             top: inherit;
@@ -394,16 +401,16 @@ footer {
 
         img {
             display: none;
-            width: 50%;
+            height: 9rem;
             margin: 0 auto;
         }
     }
 
     td {
         img {
-            height:4rem;
+            height: 4rem;
             display: none;
-            margin-right:2rem;
+            margin-right: 2rem;
         }
     }
 }
@@ -415,9 +422,10 @@ footer {
                 display: block;
             }
         }
-        td{
-            img{
-                display:inline;
+
+        td {
+            img {
+                display: inline;
             }
         }
     }
@@ -487,6 +495,10 @@ footer {
     img {
         //TODO CHange this once I get images
         height: 10rem;
+    }
+
+    .img-sml img {
+        height: 6rem;
     }
 }
 //Carousel
