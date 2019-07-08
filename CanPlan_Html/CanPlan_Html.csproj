@@ -110,6 +110,9 @@
     <Content Include="favicon\ms-icon-310x310.png" />
     <Content Include="favicon\ms-icon-70x70.png" />
     <Content Include="img\120Liner.png" />
+    <Content Include="img\120ltr-blue.png" />
+    <Content Include="img\120ltr-Green.png" />
+    <Content Include="img\120ltr-red.png" />
     <Content Include="img\120_240ltr-blue.png" />
     <Content Include="img\120_240ltr-Green.png" />
     <Content Include="img\120_240ltr-red.png" />
